@@ -1,0 +1,31 @@
+https://www.jetbrains.com/help/phpstorm/using-live-templates.html
+
+=
+<?= $END$; ?>
+
+php
+<?php $END$ ?>
+
+loop
+if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    <!-- Вывод постов, функции цикла: the_title() и т.д. -->
+    $END$
+<?php endwhile; else: ?>
+    Записей нет.
+<?php endif;
+
+cc
+class $NAME$Controller extends Controller
+{
+
+    $END$
+
+}
+
+cc
+class $NAME$ extends Controller
+{
+
+    $END$
+
+}
